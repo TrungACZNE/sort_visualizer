@@ -6,7 +6,7 @@
     display: none;
 }
 
-.application-container {
+.container {
     box-sizing: border-box;
     min-width: 100%;
 }
@@ -60,4 +60,38 @@
 
 .code-container__textarea {
     width: 100%;
+}
+
+.visual {
+    margin: auto;
+    display: table;
+    font-size: xx-large;
+}
+
+.visual__cell:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.visual__cell:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.visual__cell {
+    border-style: solid;
+    border-width: 1px;
+    display: inline-block;
+    height: 60px;
+    position: relative;
+    width: 60px;
+}
+
+.visual__cell__text {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
 }
